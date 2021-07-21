@@ -6,7 +6,7 @@
     
     $posts = get_posts();
     
-    foreach($posts as $post) {    
+    foreach($posts as $post) {   
     ?>
     <div class="col-12 col-lg-4">
       <div class="card bg-light">
