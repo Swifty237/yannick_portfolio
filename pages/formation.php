@@ -1,5 +1,5 @@
 <br>
-<h3>Mon blog...</h3>
+<h3>Mes formations</h3>
 <br>
 <hr>
 
@@ -27,3 +27,4 @@ foreach($posts as $post) {
 
   <?php
 }
+?>

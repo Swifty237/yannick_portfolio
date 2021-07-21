@@ -14,7 +14,13 @@
                   <a class="nav-link <?php echo ($page == 'home')? 'active' : ''; ?>" href="index.php?page=home">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link <?php echo ($page == 'blog')? 'active' : ''; ?>" href="index.php?page=blog">Blog</a>
+                  <a class="nav-link <?php echo ($page == 'realisation')? 'active' : ''; ?>" href="index.php?page=realisation">realisation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link <?php echo ($page == 'formation')? 'active' : ''; ?>" href="index.php?page=formation">formation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link <?php echo ($page == 'contact')? 'active' : ''; ?>" href="index.php?page=contact">contact</a>
                 </li>
               </ul>
               
