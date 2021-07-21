@@ -96,11 +96,11 @@ else {
   ?>
 <form method="POST">
   <div class="row bg-light">
-    <div class="mb-3 col-6">
+    <div class="mb-3 col-12 col-lg-6">
       <label for="name" class="form-label">Nom</label>
       <input type="text" class="form-control" id="name" name="name" required>
     </div>
-    <div class="mb-3 col-6">
+    <div class="mb-3 col-12 col-lg-6">
       <label for="email" class="form-label">Adresse email</label>
       <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required>
     </div>

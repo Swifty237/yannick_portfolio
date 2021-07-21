@@ -7,7 +7,7 @@
 ?>
 
 <div class="row mt-5 justify-content-center">
-  <div class="col-4">
+  <div class="col-8 col-sm-6 col-lg-4">
     <div class="card">
       <div class="row">
         <div class="col d-flex justify-content-center">
