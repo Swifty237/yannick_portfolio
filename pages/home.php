@@ -4,7 +4,8 @@
     <div class="col-7 mt-5">
       <p class="fs-2 fst-italic fw-bold">Salut !</p>
       <p class="fs-2 fst-italic fw-bold">Je suis Yannick KAMDEM,</p>
-      <p class="fs-2 fst-italic fw-bold">developpeur full-stack.</p>
+      <p class="fs-2 fst-italic fw-bold">developpeur full-stack</p>
+      <p class="fs-2 fst-italic fw-bold">et vous êtes sur mon portfolio.</p>
       <div class="d-flex justify-content-center my-5">
         <button class="btn btn-primary fs-5" type="button"><a class="text-white text-decoration-none" href="index.php?page=realisation">Bienvenue</a></button>
       </div>

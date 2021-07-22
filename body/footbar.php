@@ -1,7 +1,7 @@
 <footer class="row bg-dark">
   <div class="col-12">
     <div class="text-center text-white mt-3 fs-4">
-      mon portfolio
+      portfolio
     </div>
     <div class="d-flex align-items-center justify-content-center mt-3">
       <div class="line"></div>

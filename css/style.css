@@ -11,3 +11,11 @@
 h5.color-style {
   color: #c5c9cc; 
 }
+
+.size {
+  height: 300px;
+}
+
+.size-text {
+  font-size: smaller;
+}

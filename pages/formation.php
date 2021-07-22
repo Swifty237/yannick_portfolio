@@ -1,7 +1,6 @@
 <div class="col-11 mb-4">
 <br>
-<h3>Mes formations</h3>
-<br>
+<h2 class="d-flex justify-content-center">Mes formations</h2>
 <hr>
 
 <?php
