@@ -6,7 +6,7 @@ if($post == false) {
 }
 else {
   ?>
-    </div>
+  <div class="col-11">
     <div class="card border-bottom-0">
       <img src="img/posts/<?= $post->image ?>" class="card-img-top" alt="<?= $post->title ?>">
       <div class="card-body">
@@ -94,20 +94,21 @@ else {
     }  
   
   ?>
-<form method="POST">
-  <div class="row bg-light">
-    <div class="mb-3 col-12 col-lg-6">
-      <label for="name" class="form-label">Nom</label>
-      <input type="text" class="form-control" id="name" name="name" required>
+  <form method="POST" class="m-4">
+    <div class="row bg-light">
+      <div class="mb-3 col-12 col-lg-6">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3 col-12 col-lg-6">
+        <label for="email" class="form-label">Adresse email</label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required>
+      </div>
+      <div class="mb-3 col-12">
+      <label class="mb-3" for ="comment">commentaire</label>
+      <textarea name="comment" id="comment" style="width : 100%;" class="form-control" required></textarea>
+      </div>
     </div>
-    <div class="mb-3 col-12 col-lg-6">
-      <label for="email" class="form-label">Adresse email</label>
-      <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required>
-    </div>
-    <div class="mb-3 col-12">
-    <label class="mb-3" for ="comment">commentaire</label>
-    <textarea name="comment" id="comment" style="width : 100%;" class="form-control" required></textarea>
-    </div>
-  </div>
-  <button type="submit" name="submit" class="btn btn-primary">Commenter ce poste</button>
-</form>
+    <button type="submit" name="submit" class="btn btn-primary">Commenter ce poste</button>
+  </form>
+</div>

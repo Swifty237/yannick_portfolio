@@ -1,3 +1,4 @@
+<div class="col-11 mb-4">
 <br>
 <h3>Mes formations</h3>
 <br>
@@ -28,3 +29,5 @@ foreach($posts as $post) {
   <?php
 }
 ?>
+
+</div>

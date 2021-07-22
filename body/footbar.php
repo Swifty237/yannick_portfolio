@@ -1,4 +1,4 @@
-<footer class="row bg-dark mt-5">
+<footer class="row bg-secondary">
   <div class="col-12">
           <div class="text-center text-white mt-3 fs-4">
             mon portfolio
@@ -24,15 +24,14 @@
               </svg>
             </div>
           </div>
-          <div class="d-flex justify-content-center mt-3">
-            <ul class="list-inline">
-              <li class="list-inline-item"><a class="text-white text-decoration-none" href="../pages/kamdem-index.html">Accueil</a></li>
-              <li class="list-inline-item"><a class="text-white text-decoration-none" href="../pages/kamdem-evenements.html">Actualités</a></li>
-              <li class="list-inline-item"><a class="text-white text-decoration-none" href="../pages/kamdem-tarifs.html">A propos</a></li>
-              <li class="list-inline-item"><a class="text-white text-decoration-none" href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
-              <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">mentions légales</a></li>
-              <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">CGV</a></li>
-            </ul>
+          <div class="navbar navbar-dark d-flex justify-content-center mt-3">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link text-center <?php echo ($page == 'home') ? 'active' : ''; ?>" href="index.php?page=home">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link text-center <?php echo ($page == 'realisation') ? 'active' : ''; ?>" href="index.php?page=realisation">Réalisations</a></li>
+              <li class="nav-item"><a class="nav-link text-center <?php echo ($page == 'formation') ? 'active' : ''; ?>" href="index.php?page=formation">Formations</a></li>
+              <li class="nav-item"><a class="nav-link text-center <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="index.php?page=contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link text-center" href="#">mentions légales</a></li>
+              <li class="nav-item"><a class="nav-link text-center" href="#">CGV</a></li>
           </div>
         </div>
 </footer>

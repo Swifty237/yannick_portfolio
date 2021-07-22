@@ -40,19 +40,18 @@
     </head>
 
     <body>
-      <?php
-        include_once 'body/topbar.php';
-      ?>
-      <div class="container-fluid">
+      <div class="row">
         <?php
+          
+          include_once 'body/sidebar.php';
 
           include_once 'pages/'.$page.'.php';
-          
+
           include_once 'body/footbar.php';
+                  
+      ?>
 
-        ?>
       </div>
-
 
       <script src="js/jquery-3.5.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
