@@ -1,4 +1,4 @@
-<header class="navbar navbar-dark bg-secondary col-1 align-items-start">
+<header class="navbar navbar-dark bg-dark col-1 justify-content-center align-items-start">
   <ul class="row navbar-nav">
     <li class="nav-item col-12 text-white">
       <a class="nav-link <?php echo ($page == 'home')? 'active' : ''; ?>" href="index.php?page=home">
@@ -15,31 +15,6 @@
           <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
         </svg>
       </a>
-    </li>
-
-    <li class="nav-item col-12 mt-3">
-      <form class="form">
-        <select class="form-select" name="#" id="article" aria-label="listes des articles">
-          <option selected value=""></option>
-  
-          <?php
-            $posts = get_posts();
-            if($posts == false) {
-              header('Location:index.php?page=error');
-            }
-            else {
-              foreach ($posts as $post) {
-          ?>
-  
-          <option value="index.php?page=post&id=<?= $post->id ?>"><?= $post->title ?></option>
-  
-          <?php
-                }
-              }  
-          ?>
-  
-        </select>
-      </form>
     </li>
 
     <li class="nav-item col-12 text-white mt-3">

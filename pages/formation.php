@@ -6,7 +6,7 @@
 
 <?php
 
-$posts = get_posts();
+$posts = get_posts_formation();
 foreach($posts as $post) {
   ?>
 

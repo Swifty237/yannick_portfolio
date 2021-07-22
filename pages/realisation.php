@@ -5,7 +5,7 @@
   <div class="row d-flex justify-content-center">
       <?php
       
-      $posts = get_posts();
+      $posts = get_posts_realisation();
       
       foreach($posts as $post) {   
       ?>

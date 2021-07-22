@@ -41,14 +41,26 @@
 
     <body>
       <div class="row">
+
         <?php
-          
           include_once 'body/sidebar.php';
 
           include_once 'pages/'.$page.'.php';
 
-          include_once 'body/footbar.php';
-                  
+          if ($page != 'realisation') {
+
+            include_once 'functions/realisation.func.php';
+
+          }
+
+          if ($page != 'home') {
+
+            include_once 'body/footbar.php';         
+          }
+          else {
+            include_once 'body/carousel.php';
+          }
+
       ?>
 
       </div>

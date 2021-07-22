@@ -1,6 +1,6 @@
 <?php
 
-function get_posts() {
+function get_posts_formation() {
 
   global $db;
 
