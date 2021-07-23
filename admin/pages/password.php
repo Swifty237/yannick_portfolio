@@ -1,11 +1,13 @@
 <?php
-
     if (hasnt_password() == 0) {
       header('Location:index.php?page=dashboard');
     }
-
 ?>
 
+<div class="col-11">
+    <div class="row">
+        <h3 class="text-center text-white bg-secondary">Administration</h3>
+    </div>
 <div class="row mt-5 justify-content-center">
     <div class="col-8 col-sm-6 col-lg-4">
         <div class="card">
@@ -75,7 +77,7 @@
                         <label class="form-label" for="password_again">Répéter le mot de passe</label>
                         <input class= "form-control" type="password" id="password_again" name="password_again" required>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2" name="submit">
+                    <button type="submit" class="btn btn-primary my-3" name="submit">
                         Se connecter
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
@@ -85,4 +87,5 @@
             </form> 
         </div>
     </div>
+</div>
 </div>

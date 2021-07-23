@@ -17,7 +17,6 @@ function get_posts_formation() {
     ON posts.writer=admins.email
     WHERE posted=1
     ORDER BY date DESC
-    LIMIT 0,2
   ');
 
   $results = [];

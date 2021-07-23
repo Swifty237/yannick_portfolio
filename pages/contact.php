@@ -6,13 +6,13 @@
     <div class="col d-flex justify-content-center bg-light ms-3">
       <div class="mt-4 ms-5">
         <div class="row">
-          <p class="fs-5 fst-italic fw-bold row">Pour me joindre vous utiliser</p>
+          <p class="fs-5 fst-italic fw-bold row">Pour me joindre vous pouvez utiliser</p>
           <p class="fs-5 fst-italic fw-bold row">le numéro de téléphone ou le mail ci dessous</p>
           <p class="fs-5 fst-italic fw-bold row">sinon merci de remplir le formulaire</p>
         </div>
         <div class="row mt-5">
-          <a class="mb-1" href="mailto:yannickkamdemkouam@yahoo.fr">yannickkamdemkouam@yahoo.fr</a>
-          <a href="tel:0760034929">07 60 03 49 29</a>
+          <a class="mb-1 text-center" href="mailto:yannickkamdemkouam@yahoo.fr">yannickkamdemkouam@yahoo.fr</a>
+          <a class="text-center"href="tel:0760034929">07 60 03 49 29</a>
         </div>
       </div>
     </div>

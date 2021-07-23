@@ -12,10 +12,47 @@ h5.color-style {
   color: #c5c9cc; 
 }
 
-.size {
+.size-realisation {
   height: 300px;
 }
 
 .size-text {
   font-size: smaller;
+}
+
+.bg-sidebar {
+  background: linear-gradient(black, gray);
+}
+
+.bg-footbar, .bg-carousel {
+  background: linear-gradient(gray, black);
+}
+
+.size-card-carousel {
+  height: 20rem;
+}
+
+.welcome-animation1 {
+  animation: 4s displayText;
+}
+
+.welcome-animation2 {
+  animation: 5s displayText;
+}
+
+.welcome-animation3 {
+  animation: 6s displayText;
+}
+
+.welcome-animation4 {
+  animation: 7s displayText;
+}
+
+@keyframes displayText {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
 }

@@ -1,4 +1,4 @@
-<footer class="row bg-dark">
+<footer class="row bg-footbar">
   <div class="col-12">
     <div class="text-center text-white mt-3 fs-4">
       portfolio

@@ -11,7 +11,7 @@
       ?>
       <div class="col-12 col-lg-4 mt-5 mx-3">
         <div class="card bg-light">
-          <img src="img/posts/<?= $post->image ?>" class="card-img-top size" alt="<?= $post->title ?>">
+          <img src="img/posts/<?= $post->image ?>" class="card-img-top size-realisation" alt="<?= $post->title ?>">
           <div class="card-body">
             <h5 class="card-title"><?= $post->title ?></h5>
             <h6 class="card-subtile text-muted">Le <?= date('d/m/Y à H:i', strtotime($post->date)); ?> par <?= $post->name ?></h6>
