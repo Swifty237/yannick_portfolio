@@ -1,4 +1,4 @@
-<header class="navbar navbar-dark bg-sidebar col-1 justify-content-center align-items-start">
+<header class="navbar navbar-dark bg-sidebar col-1 justify-content-center align-items-start change-opacity-1">
   <ul class="row navbar-nav">
     <li class="nav-item col-12">
       <a class="nav-link <?php echo ($page == 'home')? 'active' : ''; ?>" href="index.php?page=home">

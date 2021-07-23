@@ -17,7 +17,7 @@ h5.color-style {
 }
 
 .size-text {
-  font-size: smaller;
+  font-size: 12px;
 }
 
 .bg-sidebar {
@@ -32,27 +32,52 @@ h5.color-style {
   height: 20rem;
 }
 
-.welcome-animation1 {
-  animation: 4s displayText;
+.change-opacity-1 {
+  animation: 2s displayText;
 }
 
-.welcome-animation2 {
+.change-opacity-2 {
+  animation: 3s displayText;
+}
+
+.change-opacity-3 {
   animation: 5s displayText;
 }
 
-.welcome-animation3 {
-  animation: 6s displayText;
-}
-
-.welcome-animation4 {
+.change-opacity-4 {
   animation: 7s displayText;
 }
 
 @keyframes displayText {
   from {
-    color: white;
+    opacity:0;
   }
   to {
-    color: black;
+    opacity: 1;
   }
+}
+
+/** css pour afficher ou non la photo de profil avec l'API intersection Observer */ 
+/** [class*="reveal-"] selection tout ce qui contient une class 'reveal-...' */
+
+ [class*="reveal-"] { 
+  opacity: 0;
+}
+
+.reveal-1 {
+  transform: translateX(-100px)
+}
+
+.reveal-2 {
+  transform: translateX(100px)
+}
+
+.reveal-4 {
+  transform: translate(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s;
 }

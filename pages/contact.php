@@ -1,9 +1,11 @@
 <div class="col-11 mb-4">
   <br>
-  <h2 class="d-flex justify-content-center">Contact</h2>
+  <h2 class="d-flex justify-content-center change-opacity-1">Contact</h2>
   <hr>
+
   <div class="row">
-    <div class="col d-flex justify-content-center bg-light ms-3">
+
+    <div class="col d-flex justify-content-center bg-light ms-3 reveal-4">
       <div class="mt-4 ms-5">
         <div class="row">
           <p class="fs-5 fst-italic fw-bold row">Pour me joindre vous pouvez utiliser</p>
@@ -16,8 +18,22 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <form method="POST" class="m-4">
+
+    <?php
+      if (isset($_POST['submit'])) {
+
+        $name = htmlspecialchars(trim($_POST['name']));
+        $email = htmlspecialchars(trim($_POST['email']));
+        $phoneNumber = htmlspecialchars(trim($_POST['phone']));
+        $mailContent = htmlspecialchars(trim($_POST['message']));
+
+        send_email($name, $email, $mailContent, $phoneNumber);
+      }
+
+    ?>
+
+    <div class="col change-opacity-1">
+      <form method="POST" class="form m-4">
         <div class="row">
           <div class="mb-3 col-12">
             <label for="name" class="form-label">Nom</label>
@@ -28,8 +44,8 @@
             <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Votre email ici" required>
           </div>
           <div class="mb-3 col-12">
-            <label for="name" class="form-label">N° téléphone</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Votre n° de téléphone ici">
+            <label for="phone" class="form-label">N° téléphone</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Votre n° de téléphone ici">
             <span class="text-muted size-text fst-italic">le champ ci dessus n'est pas obligatoire</span>
           </div>
           <div class="mb-3 col-12">

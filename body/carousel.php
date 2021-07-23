@@ -1,6 +1,6 @@
 <div class="col-11">
 
-  <div class="row">
+  <div class="row change-opacity-1">
 
     <div class="col-6">
       <div class="row bg-carousel">

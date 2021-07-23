@@ -32,10 +32,9 @@
         <div class="col-12 col-lg-7 bg-light">
           <?= substr(nl2br($post->content), 0, 1200) ?>...
         </div>
-        <div class="card col-12 col-lg-4 bg-light">
-          <img src="../img/posts/<?= $post->image ?>" alt="<?= $post->title ?>">
-          <br><br>
-          <a class="btn btn-primary" href="index.php?page=post&id=<?= $post->id ?>">Modifier l'article</a>
+        <div class="card col-12 col-lg-4 bg-light" style="height: 30rem;">
+          <img class="card-img-top" src="../img/posts/<?= $post->image ?>" style="height: 22rem;" alt="<?= $post->title ?>">
+          <a class="btn btn-primary mt-5" href="index.php?page=post&id=<?= $post->id ?>">Modifier l'article</a>
         </div>
       </div>
     </div>
