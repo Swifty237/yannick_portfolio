@@ -1,8 +1,8 @@
-<div class="col-11 mb-5">
+<div class="col-10 col-sm-11 mb-5">
   <br>
-  <h2 class ="row d-flex justify-content-center change-opacity-1"> Mes réalisations</h2>
+  <h2 class ="d-flex justify-content-center change-opacity-1 font-trebuchet"> Mes réalisations</h2>
   <hr>
-  <div class="row d-flex justify-content-center">
+  <div class="row justify-content-center">
       
       <?php
         $postCount = 1;
@@ -11,16 +11,16 @@
         foreach($posts as $post) {   
       ?>
 
-      <div class="col-12 col-lg-4 mt-5 mx-3">
+      <div class="col-12 col-md-8 col-lg-4 mt-5 mx-3">
         <div class="card bg-light <?= ($postCount % 2) ? 'reveal-1' : 'reveal-2' ?>">
           <img src="img/posts/<?= $post->image ?>" class="card-img-top size-realisation" alt="<?= $post->title ?>">
           <div class="card-body">
-            <h5 class="card-title"><?= $post->title ?></h5>
-            <h6 class="card-subtile text-muted">Le <?= date('d/m/Y à H:i', strtotime($post->date)); ?> par <?= $post->name ?></h6>
+            <h5 class="card-title font-trebuchet"><?= $post->title ?></h5>
+            <h6 class="card-subtile text-muted font-trebuchet">Le <?= date('d/m/Y à H:i', strtotime($post->date)); ?> par <?= $post->name ?></h6>
             <div class="row card-text d-flex justify-content-between">
               
               <div class="col-7 d-flex align-items-center">
-                <a href="index.php?page=post&id=<?= $post->id ?>">Voir la publication complète</a>
+                <a class="font-trebuchet" href="index.php?page=post&id=<?= $post->id ?>">Voir la publication complète</a>
               </div>
 
               <?php

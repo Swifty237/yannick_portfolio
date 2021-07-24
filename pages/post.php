@@ -6,12 +6,12 @@ if($post == false) {
 }
 else {
   ?>
-  <div class="col-11">
+  <div class="col-10 col-sm-11">
     <div class="card border-bottom-0">
       <img src="img/posts/<?= $post->image ?>" class="card-img-top" alt="<?= $post->title ?>">
       <div class="card-body">
-        <h3 class="card-title"><?= $post->title ?></h3>
-        <h6 class="card-subtitle text-muted mb-4">Publié le <?= date('d/m/Y à H:i', strtotime($post->date)); ?> par <?= $post->name ?></h6>
+        <h3 class="card-title font-trebuchet"><?= $post->title ?></h3>
+        <h6 class="card-subtitle text-muted mb-4 font-trebuchet">Publié le <?= date('d/m/Y à H:i', strtotime($post->date)); ?> par <?= $post->name ?></h6>
         <p class="card-text mx-5" style="text-align : justify;"><?= nl2br($post->content) ?></p>
       </div>
     </div>
@@ -36,8 +36,8 @@ else {
     ?>
 
       <blockquote>
-        <strong><?= $response->name ?> (<?= date('d/m/Y', strtotime($response->date)) ?>)</strong>
-        <p><?= nl2br($response->comment) ?></p>
+        <strong class="font-trebuchet"><?= $response->name ?> (<?= date('d/m/Y', strtotime($response->date)) ?>)</strong>
+        <p class="font-trebuchet"><?= nl2br($response->comment) ?></p>
       </blockquote>
 
     <?php
@@ -52,7 +52,7 @@ else {
 
   ?>
 
-<h4>Commentez :</h4>
+<h4 class="font-trebuchet">Commentez :</h4>
 
 <?php
     if (isset($_POST['submit'])) {
@@ -97,18 +97,18 @@ else {
   <form method="POST" class="m-4">
     <div class="row bg-light">
       <div class="mb-3 col-12 col-lg-6">
-        <label for="name" class="form-label">Nom</label>
+        <label for="name" class="font-trebuchet form-label">Nom</label>
         <input type="text" class="form-control" id="name" name="name" required>
       </div>
       <div class="mb-3 col-12 col-lg-6">
-        <label for="email" class="form-label">Adresse email</label>
+        <label for="email" class="font-trebuchet form-label">Adresse email</label>
         <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required>
       </div>
       <div class="mb-3 col-12">
-      <label class="mb-3" for ="comment">commentaire</label>
-      <textarea name="comment" id="comment" style="width : 100%;" class="form-control" required></textarea>
+      <label class="font-trebuchet mb-3" for ="comment">commentaire</label>
+      <textarea name="comment" id="comment" style="width : 100%;" class="font-trebuchet form-control" required></textarea>
       </div>
     </div>
-    <button type="submit" name="submit" class="btn btn-primary">Commenter ce poste</button>
+    <button type="submit" name="submit" class="font-trebuchet btn btn-primary">Commenter ce poste</button>
   </form>
 </div>

@@ -1,11 +1,9 @@
-.line{
-  height: 2px;
-  width: 15vw;
-  background-color: white;
+.font-segoe {
+  font-family: Segoe Print;
 }
 
-.icons{
-  width: 10vw;
+.font-trebuchet {
+  font-family: Trebuchet MS;
 }
 
 h5.color-style {
@@ -24,12 +22,16 @@ h5.color-style {
   background: linear-gradient(black, gray);
 }
 
-.bg-footbar, .bg-carousel {
+.bg-footbar {
+  background: linear-gradient(gray, black);
+}
+
+.bg-carousel {
   background: linear-gradient(gray, black);
 }
 
 .size-card-carousel {
-  height: 20rem;
+  height: 25rem;
 }
 
 .change-opacity-1 {
