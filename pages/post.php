@@ -24,7 +24,7 @@ else {
 
 <hr>
 
-<h4>Commentaires</h4>
+<h4 id="comment">Commentaires</h4>
 
   <?php
 
@@ -69,7 +69,7 @@ else {
                       <div class="card bg-light">
                           <div class="card-body">
                               <div class="card-tile d-flex justify-content-center">
-                                  <h5>Attention l'adresse email saisie n'est pas valide !</h5>
+                                  <h5>Attention l'adresse email saisie n'est pas valide</h5>
                               </div>
                               <div class="card-text d-flex justify-content-center">
                                   <p>Merci de saisir une adresse email valide</p>
@@ -85,11 +85,7 @@ else {
       else {
       
               comment($name, $email, $comment);
-              ?>
-                  <script>
-                      window.location.replace('index.php?page=post&id=<?= $_GET['id'] ?>')
-                  </script>
-              <?php
+              header('Location:index.php?page=post&id='.$_GET['id'].'#comment');
       }
     }  
   
@@ -109,6 +105,6 @@ else {
       <textarea name="comment" id="comment" style="width : 100%;" class="font-trebuchet form-control" required></textarea>
       </div>
     </div>
-    <button type="submit" name="submit" class="font-trebuchet btn btn-primary">Commenter ce poste</button>
+    <button type="submit" name="submit" class="font-trebuchet btn btn-primary">Commenter</button>
   </form>
 </div>

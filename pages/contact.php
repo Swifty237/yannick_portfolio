@@ -8,13 +8,13 @@
     <div class="col-12 col-lg-5 bg-light ms-3 reveal-4">
       <div class="mt-4 ms-5">
         <div class="row">
-          <p class="fs-5 font-segoe row">Pour me joindre vous pouvez utiliser</p>
-          <p class="fs-5 font-segoe row">le numéro de téléphone ou le mail ci dessous</p>
-          <p class="fs-5 font-segoe row">sinon merci de remplir le formulaire</p>
+          <p class="fs-5 fst-italic font-cursive">Pour me joindre vous pouvez utiliser</p>
+          <p class="fs-5 fst-italic font-cursive">le numéro de téléphone ou le mail ci dessous</p>
+          <p class="fs-5 fst-italic font-cursive">sinon merci de remplir le formulaire</p>
         </div>
         <div class="row mt-5">
-          <a class="mb-1 font-trebuchet" href="mailto:yannickkamdemkouam@yahoo.fr">yannickkamdemkouam@yahoo.fr</a>
-          <a class="font-trebuchet" href="tel:0760034929">07 60 03 49 29</a>
+          <a class="mb-1 font-cursive" href="mailto:yannickkamdemkouam@yahoo.fr">yannickkamdemkouam@yahoo.fr</a>
+          <a class="font-cursive" href="tel:0760034929">07 60 03 49 29</a>
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 <footer class="row bg-footbar reveal-3">
   <div class="col-12">
-    <h4 class="container text-center text-white border-bottom border-white pb-5 mt-3 fs-4 font-trebuchet">Portfolio</h4>
+    <h4 class="container text-center text-white border-bottom border-white pb-5 mt-3 fs-4 font-cursive">Portfolio</h4>
 
     <div class="row my-3 justify-content-center">
-      <p class="col-4 text-white text-center fs-3 m-3 font-trebuchet">Retrouver moi sur</p>
+      <p class="col-4 text-white text-center fs-3 m-3 font-cursive">Retrouver moi sur</p>
     </div>
 
     <div class="row d-flex justify-content-center">
@@ -26,16 +26,16 @@
     <div class="row navbar navbar-dark mt-3 justify-content-center">
       
       <ul class="col-3 navbar-nav">
-        <li class="nav-item"><a class="nav-link text-center font-trebuchet <?php echo ($page == 'home') ? 'active' : ''; ?>" href="index.php?page=home">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link text-center font-trebuchet <?php echo ($page == 'realisation') ? 'active' : ''; ?>" href="index.php?page=realisation">Réalisations</a></li>
-        <li class="nav-item"><a class="nav-link text-center font-trebuchet <?php echo ($page == 'formation') ? 'active' : ''; ?>" href="index.php?page=formation">Formations</a></li>
-        <li class="nav-item"><a class="nav-link text-center font-trebuchet <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="index.php?page=contact">Contact</a></li>
-        <li class="nav-item"><a class="nav-link text-center font-trebuchet" href="#">mentions légales</a></li>
-        <li class="nav-item"><a class="nav-link text-center font-trebuchet" href="#">CGV</a></li>
+        <li class="nav-item"><a class="nav-link text-center font-cursive <?php echo ($page == 'home') ? 'active' : ''; ?>" href="index.php?page=home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link text-center font-cursive <?php echo ($page == 'realisation') ? 'active' : ''; ?>" href="index.php?page=realisation">Réalisations</a></li>
+        <li class="nav-item"><a class="nav-link text-center font-cursive <?php echo ($page == 'formation') ? 'active' : ''; ?>" href="index.php?page=formation">Formations</a></li>
+        <li class="nav-item"><a class="nav-link text-center font-cursive <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="index.php?page=contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-center font-cursive" href="#">mentions légales</a></li>
+        <li class="nav-item"><a class="nav-link text-center font-cursive" href="#">CGV</a></li>
       </ul>
 
       <ul class="col-3 navbar-nav">
-        <h5 class="text-center color-style font-trebuchet">Publications</h5>  
+        <h5 class="text-center color-style font-cursive">Publications</h5>  
 
         <?php
           $posts = get_posts_realisation();
@@ -47,7 +47,7 @@
         ?>
 
         <li class="nav-item">
-          <a class="nav-link text-center font-trebuchet <?php echo ($page == 'post') ? 'active' : ''; ?>" href="index.php?page=post&id=<?= $post->id ?>"><?= $post->title ?></a>
+          <a class="nav-link text-center font-cursive <?php echo ($page == 'post') && ($_GET['id'] == $post->id) ? 'active' : ''; ?>" href="index.php?page=post&id=<?= $post->id ?>"><?= $post->title ?></a>
         </li>
 
         <?php
