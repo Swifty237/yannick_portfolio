@@ -1,6 +1,5 @@
 <footer class="row bg-footbar reveal-3">
   <div class="col-12">
-    <h4 class="container text-center text-white border-bottom border-white pb-5 mt-3 fs-4 font-cursive">Portfolio</h4>
 
     <div class="row my-3 justify-content-center">
       <p class="col-4 text-white text-center fs-3 m-3 font-cursive">Retrouver moi sur</p>

@@ -1,6 +1,6 @@
 <div class="col-10 col-sm-11 mb-4">
   <br>
-  <h2 class="d-flex justify-content-center change-opacity-1 font-trebuchet">Mes formations</h2>
+  <h2 class="d-flex justify-content-center change-opacity-1 font-trebuchet"> A propos de moi</h2>
   <hr>
 
   <?php
