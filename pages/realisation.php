@@ -1,7 +1,8 @@
-<div class="col-10 col-sm-11 mb-5">
+<div class="col-10 mb-5">
   <br>
-  <h2 class ="d-flex justify-content-center change-opacity-1 font-trebuchet"> Mes réalisations</h2>
-  <hr>
+  <h2 class ="change-opacity-1 font-trebuchet fw-bold ms-5 my-5" style="font-size: 70px">Mes réalisations</h2>
+  <hr class="col-12">
+
   <div class="row justify-content-center">
       
       <?php
@@ -11,7 +12,7 @@
         foreach($posts as $post) {   
       ?>
 
-      <div class="col-12 col-md-8 col-lg-4 mt-5 mx-3">
+      <div class="col-12 col-md-8 col-lg-4 mt-5 mx-3 shadow-lg">
         <div class="card bg-light <?= ($postCount % 2) ? 'reveal-1' : 'reveal-2' ?>">
           <img src="img/posts/<?= $post->image ?>" class="card-img-top size-realisation" alt="<?= $post->title ?>">
           <div class="card-body">

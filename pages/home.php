@@ -1,29 +1,63 @@
-<div class="col-12 mb-4">
-  <div class="row justify-content-around">
+<div class="col-12">
+
+  <div class="row justify-content-around reveal-3 py-5" style="background-image: url('img/posts/post.png');">
     
-    <div class="col-9 col-sm-7 col-md-3 mt-5 reveal-1">
+    <div class="col-9 col-sm-7 col-md-3 reveal-1 mt-5 shadow-lg" style="height: 40vw">
       <div class="card">
-        <img src="img/posts/profil2.jpg" class="card-img-top" alt="photo de profil">
-        <div class="card-body">
-          <p class="card-text font-trebuchet text-center">Yannick KAMDEM</p>
+        <img src="img/posts/profil5.jpg" class="card-img-top" alt="photo de profil">
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+      <div class="row gb-sidebar justify-content-center">
+        <div class="col-10 my-5">
+          <p class="fw-bolder change-opacity-2 font-trebuchet text-center text-white mt-5" style="font-size: 20px">Yannick KAMDEM K.</p>
+          <p class="fw-bolder change-opacity-3 font-trebuchet text-center text-white mb-5" style="font-size: 50px">développeur full-stack</p>
+        </div>
+      </div>
+
+      <div class="d-flex col-12 justify-content-center mt-5">
+        
+  
+      </div>
+    </div>
+    
+
+  </div>
+
+    <div class="row justify-content-center">
+      <div class="col-10 mb-5">
+
+  <br>
+  <h2 id="formation" class="ms-5 change-opacity-1 my-5 font-trebuchet fw-bold" style="font-size: 70px">A propos de moi</h2>
+  <hr>
+
+  <?php
+    $posts = get_posts_formation();
+    foreach($posts as $post) {
+  ?>
+
+  <div class="row m-5">
+    <div class="col">
+      <h4 class="mb-3 font-trebuchet"><?= $post->title ?></h4>
+      <div class="row d-flex justify-content-between">
+        <div class=" col-12 col-lg-7 bg-light">
+          <?= substr(nl2br($post->content), 0, 1200) ?>...
+        </div>
+        <div class="card col-12 col-lg-4 bg-light" style="height: 30rem;">
+          <img src="img/posts/<?= $post->image ?>" style="height: 22rem;" alt="<?= $post->title ?>">
+          <a class="btn btn-primary mt-5 font-trebuchet" href="index.php?page=post&id=<?= $post->id ?>">Lire l'article complet</a>
         </div>
       </div>
     </div>
+  </div>
 
-    
-    <div class="col-12 col-lg-6 mt-5 d-flex justify-content-center">
-      <div>
-        <p class="fs-2 fst-italic fw-bolder change-opacity-1 font-cursive">Salut !</p>
-        <p class="fs-2 fst-italic fw-bolder change-opacity-2 font-cursive">Je suis Yannick KAMDEM,</p>
-        <p class="fs-2 fst-italic fw-bolder change-opacity-3 font-cursive">developpeur full-stack</p>
-        <p class="fs-2 fst-italic fw-bolder change-opacity-4 font-cursive">et vous êtes sur mon portfolio.</p>
-        <button class="btn btn-primary fs-5 reveal-2 my-5" type="button">
-          <a class="text-white text-decoration-none font-trebuchet" href="index.php?page=realisation">Bienvenue</a>
-        </button>
-      </div>
+    <?php
+    }
+    ?>
+
     </div>
 
   </div>
-</div>
 
 </div>

@@ -1,7 +1,7 @@
-<div class="col-10 col-sm-11 mb-4">
+<div class="col-10 mb-5">
   <br>
-  <h2 class="d-flex justify-content-center change-opacity-1 font-trebuchet">Contact</h2>
-  <hr>
+  <h2 class="ms-5 change-opacity-1 font-trebuchet fw-bold my-5" style="font-size: 70px">Contact</h2>
+  <hr class="col-12">
 
   <div class="row justify-content-around">
 

@@ -16,14 +16,14 @@
     </div>
   </div>
 
-  <div class="row bg-light justify-content-center">
+  <div class="row bg-secondary justify-content-center">
 
     <?php
     }
     ?>
 
     <hr>
-    <h4 class="text-center my-3" id="comment">Commentaires</h4>
+    <h4 class="text-center my-3 text-white" id="comment">Commentaires</h4>
     <div class="col-10 mb-3">
       <div class="bg-white p-3">
 
@@ -84,22 +84,22 @@
 
 </div>
 <form method="POST" class="m-4">
-  <div class="row bg-light">
-    <h4 class="text-center py-3">Commentez</h4>
+  <div class="row bg-secondary">
+    <h4 class="text-center text-white py-3">Commentez</h4>
     <div class="mb-3 col-12 col-lg-6">
-      <label for="name" class="font-trebuchet form-label">Nom</label>
+      <label for="name" class="font-trebuchet form-label text-white">Nom</label>
       <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom ici" required>
     </div>
     <div class="mb-3 col-12 col-lg-6">
-      <label for="email" class="font-trebuchet form-label">Adresse email</label>
+      <label for="email" class="font-trebuchet form-label text-white">Adresse email</label>
       <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Votre adresse email ici" required>
     </div>
     <div class="mb-3 col-12">
-      <label class="font-trebuchet mb-3" for ="comment">commentaire</label>
+      <label class="font-trebuchet mb-3 text-white" for ="comment">commentaire</label>
       <textarea name="comment" id="comment" style="width : 100%;" class="font-trebuchet form-control" placeholder="Votre texte ici" required></textarea>
     </div>
   </div>
-  <button type="submit" name="submit" class="font-trebuchet btn btn-primary">Commenter</button>
+  <button type="submit" name="submit" class="font-trebuchet btn btn-primary text-white">Commenter</button>
 </form>
 </div>
   </div>

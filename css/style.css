@@ -19,7 +19,7 @@ h5.color-style {
 }
 
 .bg-sidebar {
-  background: linear-gradient(black, gray);
+  background: linear-gradient(gray,rgb(3, 1, 33));
 }
 
 .bg-footbar {
@@ -28,10 +28,6 @@ h5.color-style {
 
 .bg-carousel {
   background: linear-gradient(gray, black);
-}
-
-.size-card-carousel {
-  height: 25rem;
 }
 
 .change-opacity-1 {

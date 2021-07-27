@@ -27,7 +27,6 @@
       <ul class="col-3 navbar-nav">
         <li class="nav-item"><a class="nav-link text-center font-cursive <?php echo ($page == 'home') ? 'active' : ''; ?>" href="index.php?page=home">Accueil</a></li>
         <li class="nav-item"><a class="nav-link text-center font-cursive <?php echo ($page == 'realisation') ? 'active' : ''; ?>" href="index.php?page=realisation">Réalisations</a></li>
-        <li class="nav-item"><a class="nav-link text-center font-cursive <?php echo ($page == 'formation') ? 'active' : ''; ?>" href="index.php?page=formation">Formations</a></li>
         <li class="nav-item"><a class="nav-link text-center font-cursive <?php echo ($page == 'contact') ? 'active' : ''; ?>" href="index.php?page=contact">Contact</a></li>
         <li class="nav-item"><a class="nav-link text-center font-cursive" href="#">mentions légales</a></li>
         <li class="nav-item"><a class="nav-link text-center font-cursive" href="#">CGV</a></li>

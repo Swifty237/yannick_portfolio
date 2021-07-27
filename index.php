@@ -40,26 +40,19 @@
     </head>
 
     <body>
-      <div class="row">
+      <div class="row justify-content-center">
 
         <?php
           ob_start();
           include_once 'body/sidebar.php';
-
-          if ($page != 'home') {
-            include_once 'pages/'.$page.'.php';
+            
+          include_once 'pages/'.$page.'.php';
             ob_end_flush();
 
             if ($page != 'realisation') {
               include_once 'functions/realisation.func.php';
             }
             include_once 'body/footbar.php';
-          }
-
-          else {
-            include_once 'body/carousel.php';
-            include_once 'pages/'.$page.'.php';
-          }
 
         ?>
 
