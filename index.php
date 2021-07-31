@@ -47,7 +47,7 @@
           include_once 'body/sidebar.php';
             
           include_once 'pages/'.$page.'.php';
-            ob_end_flush();
+          ob_end_flush();
 
             if ($page != 'realisation') {
               include_once 'functions/realisation.func.php';

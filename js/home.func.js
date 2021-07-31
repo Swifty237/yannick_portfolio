@@ -1,5 +1,8 @@
 //Utilisation de l'API intersection Observer, ne fonctionne pas pour IE
 
+const getHome = document.getElementById('home')
+const bubble = document.createElement('div')
+
 const ratio = .3
 const options = {                                                     // on en a besoin pour créer une instance de l'objet IntersectionOberserver (IO)
   root: null,                                                         // null parce qu'on utilise tout l'écran
@@ -30,3 +33,12 @@ document.querySelectorAll('[class*="reveal-"]').forEach((r) => {      // On réc
   observer.observe(r)                                                 // On observe chacun des éléments récupéré
 
 })
+
+
+const waveMaker = () => {
+
+  bubble.classList.add('wave')
+  getHome.appendChild(bubble)
+}
+
+setInterval(waveMaker, 2500)

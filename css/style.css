@@ -58,9 +58,7 @@ h5.color-style {
 /** css pour afficher ou non la photo de profil avec l'API intersection Observer */ 
 /** [class*="reveal-"] selection tout ce qui contient une class 'reveal-...' */
 
- [class*="reveal-"] { 
-  opacity: 0;
-}
+ 
 
 .reveal-1 {
   transform: translateX(-100px)
@@ -78,4 +76,24 @@ h5.color-style {
   opacity: 1;
   transform: translateX(0);
   transition: 1s;
+}
+
+.wave {
+  position: absolute;
+  background: rgb(176, 214, 235);
+  opacity: .1;
+  border-radius: 900px;
+  animation: waveAnimation 3s ease-out;
+  height: 20px;
+  width: 20px;
+  top: 180px;
+}
+
+@keyframes waveAnimation {
+  to {
+    top: -250px;
+    opacity: 0;
+    height: 2000px;
+    width: 2000px;
+  }
 }
