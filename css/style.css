@@ -20,6 +20,9 @@ h5.color-style {
 
 .bg-sidebar {
   background: linear-gradient(gray,rgb(3, 1, 33));
+  position:sticky;
+  top:0;
+  z-index: 3000;
 }
 
 .bg-footbar {
@@ -32,6 +35,7 @@ h5.color-style {
 
 .change-opacity-1 {
   animation: 2s displayText;
+
 }
 
 .change-opacity-2 {
@@ -58,7 +62,9 @@ h5.color-style {
 /** css pour afficher ou non la photo de profil avec l'API intersection Observer */ 
 /** [class*="reveal-"] selection tout ce qui contient une class 'reveal-...' */
 
- 
+[class*="reveal-"] { 
+  opacity: 0;
+}
 
 .reveal-1 {
   transform: translateX(-100px)
@@ -96,4 +102,9 @@ h5.color-style {
     height: 2000px;
     width: 2000px;
   }
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0px;
 }
