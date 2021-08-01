@@ -1,4 +1,4 @@
-<header class="bg-sidebar d-flex col-12 justify-content-end change-opacity-1">
+<header class="bg-sidebar d-flex col-12 justify-content-end" style="background-image:url('img/posts/post.png')">
   <ul class="list-inline">
     <li class="list-inline-item mx-4 fw-bolder fs-6 font-trebuche">
       <a class="text-white text-decoration-none<?php echo ($page == 'home')? 'active' : ''; ?>" href="index.php?page=home">

@@ -12,7 +12,7 @@
         foreach($posts as $post) {   
       ?>
 
-      <div class="col-12 col-md-8 col-lg-4 mt-5 mx-3 shadow-lg">
+      <div class="col-12 col-md-8 col-lg-4 mt-5 mx-3">
         <div class="card bg-light <?= ($postCount % 2) ? 'reveal-1' : 'reveal-2' ?>">
           <img src="img/posts/<?= $post->image ?>" class="card-img-top size-realisation" alt="<?= $post->title ?>">
           <div class="card-body">

@@ -4,7 +4,7 @@
   }
 ?>
 
-<div class="col-11 bg-light">
+<div class="col-12 bg-light">
   <div class="row">
     <h3 class="text-center text-white bg-secondary">Administration</h3>
   </div>

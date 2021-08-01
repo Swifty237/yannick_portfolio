@@ -1,6 +1,6 @@
 <div class="col-12">
 
-  <div id="home" class="row justify-content-around reveal-3 py-5" style="background-image: url('img/posts/post.png');">
+  <div id="home" class="row justify-content-around reveal-3 py-5" style="background-image: url('img/posts/post.png'); background-size: cover">
     
     <div class="col-9 col-sm-7 col-md-3 reveal-1 my-5" style="height: 40vw">
       <div class="card">

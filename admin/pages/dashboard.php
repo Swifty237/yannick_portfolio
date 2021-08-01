@@ -5,7 +5,7 @@
     }
   ?>
   
-  <div class="col-11">
+  <div class="col-12">
     <div class="row justify-content-center">
     <h3 class="text-center text-white bg-secondary">Administration</h3>
     <h4 class="text-center my-5">Tableau de bord</h4>
