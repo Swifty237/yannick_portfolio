@@ -34,6 +34,8 @@ document.querySelectorAll('[class*="reveal-"]').forEach((r) => {      // On réc
 
 })
 
+const size = Math.random() * 50 + 300 + 'px'
+console.log(size)
 
 const waveMaker = () => {
 
